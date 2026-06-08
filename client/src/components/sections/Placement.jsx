@@ -11,8 +11,8 @@ const Placement = ({ id }) => {
     { icon: Briefcase, title: "Place", description: "Secure your dream job" }
   ]
   return (
-<section id={id} className="py-20 bg-gradient-to-br from-primary-600 to-teal-600 scroll-mt-24">
-       <div className="container mx-auto px-6">
+    <section id={id} className="py-20 bg-gradient-to-br from-primary-600 to-teal-600 scroll-mt-24">
+      <div className="container mx-auto px-6">
         <motion.div initial={{ y: 30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Your Path to Employment</h2>
         </motion.div>

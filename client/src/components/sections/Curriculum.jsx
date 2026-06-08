@@ -14,12 +14,12 @@ const icons = [BookOpen, Search, ChartBarBig, Cpu, Briefcase]
 
 const Curriculum = ({ id }) => {
   return (
-<section id={id} className="py-20 bg-white scroll-mt-24">
-       <div className="container mx-auto px-6">
+    <section id={id} className="py-20 bg-white scroll-mt-24">
+      <div className="container mx-auto px-6">
         <motion.div initial={{ y: 30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Your Learning Journey</h2>
         </motion.div>
-<div className="max-w-4xl mx-auto">{curriculumData.map((m, i) => {
+        <div className="max-w-4xl mx-auto">{curriculumData.map((m, i) => {
           const Icon = icons[i]
           return (
             <motion.div key={i} initial={{ x: i % 2 === 0 ? -50 : 50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.15, duration: 0.6 }} className="relative mb-12 last:mb-0">
